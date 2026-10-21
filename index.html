@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistik Kabupaten Samosir</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5f4;
+    color: #263b36;
+    line-height: 1.6;
+}
+header {
+    background: #176b55;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+header img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+header h1 {
+    font-size: 27px;
+}
+nav {
+    background: #104c3e;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #176b55;
+    margin-bottom: 15px;
+}
+
+.intro {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #e6b94b;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(190px, 1fr)
+    );
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 8px #00000010;
+}
+
+.card h3 {
+    font-size: 15px;
+    color: #61756e;
+}
+
+.number {
+    font-size: 25px;
+    font-weight: bold;
+    color: #176b55;
+    margin-top: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #176b55;
+    color: white;
+}
+
+tr:hover {
+    background: #e9f5ef;
+}
+
+.highlight {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.highlight strong {
+    color: #176b55;
+}
+
+.sources a {
+    color: #176b55;
+    display: block;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #104c3e;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 7px;
+    }
+
+    th, td {
+        padding: 9px 6px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Ganti URL jika memiliki file logo resmi -->
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Lambang_Kabupaten_Samosir.png/200px-Lambang_Kabupaten_Samosir.png"
+        alt="Lambang Kabupaten Samosir"
+        onerror="this.style.display='none'"
+    >
+    <h1>Kabupaten Samosir</h1>
+    <p>Informasi Kependudukan dan Demografi</p>
+</header>
+
+<nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#statistik">Statistik</a>
+    <a href="#kecamatan">Kecamatan</a>
+    <a href="#sumber">Sumber Data</a>
+</nav>
+
+<main>
+
+<section id="tentang">
+    <div class="intro">
+        <h2>Tentang Samosir</h2>
+        <p>
+            Kabupaten Samosir terletak di Provinsi Sumatera Utara
+            dan berada di kawasan Danau Toba. Informasi penduduk,
+            kelahiran, dan kematian dapat digunakan untuk memahami
+            perkembangan demografi daerah.
+        </p>
+    </div>
+</section>
+
+<section id="statistik">
+    <h2>Statistik Kependudukan</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Jumlah Penduduk</h3>
+            <p class="number">144.813</p>
+            <p>Orang</p>
+        </div>
+
+        <div class="card">
+            <h3>Jumlah Kelahiran</h3>
+            <p class="number">—</p>
+            <p>Perlu data BPS</p>
+        </div>
+
+        <div class="card">
+            <h3>Jumlah Kematian</h3>
+            <p class="number">—</p>
+            <p>Perlu data BPS</p>
+        </div>
+    </div>
+    <p style="margin-top:10px;font-size:13px">
+        Catatan: angka penduduk perlu dicocokkan dengan publikasi
+        BPS dan tahun data yang digunakan. Tanda — berarti data
+        kelahiran dan kematian belum diisi.
+    </p>
+</section>
+
+<section id="kecamatan">
+    <h2>Data Penduduk per Kecamatan</h2>
+
+    <div style="overflow-x:auto">
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Kecamatan</th>
+                <th>Jumlah Penduduk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Pangururan</td><td>36.746</td></tr>
+            <tr><td>2</td><td>Simanindo</td><td>—</td></tr>
+            <tr><td>3</td><td>Palipi</td><td>—</td></tr>
+            <tr><td>4</td><td>Nainggolan</td><td>—</td></tr>
+            <tr><td>5</td><td>Onan Runggu</td><td>—</td></tr>
+            <tr><td>6</td><td>Ronggur Nihuta</td><td>—</td></tr>
+            <tr><td>7</td><td>Harian</td><td>—</td></tr>
+            <tr><td>8</td><td>Sianjur Mulamula</td><td>—</td></tr>
+            <tr><td>9</td><td>Sitiotio</td><td>—</td></tr>
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<section>
+    <h2>Kecamatan dengan Penduduk Terbanyak</h2>
+
+    <div class="highlight">
+        <p>
+            <strong>Pangururan</strong> ditampilkan sebagai kecamatan
+            dengan jumlah penduduk terbanyak berdasarkan angka
+            sementara pada halaman ini.
+        </p>
+        <p>
+            Jumlah tersebut harus diverifikasi kembali menggunakan
+            tabel resmi BPS untuk tahun yang sama sebelum digunakan
+            dalam laporan.
+        </p>
+    </div>
+</section>
+<section id="sumber" class="sources">
+    <h2>Sumber Data Resmi</h2>
+    <p>Gunakan sumber berikut untuk memeriksa dan melengkapi data:</p>
+    <a href="https://samosirkab.bps.go.id/"
+       target="_blank" rel="noopener">
+       BPS Kabupaten Samosir
+    </a>
+    <a href="https://samosirkab.go.id/"
+       target="_blank" rel="noopener">
+       Situs Pemerintah Kabupaten Samosir
+    </a>
+    <a href="https://sumut.bps.go.id/"
+       target="_blank" rel="noopener">
+       BPS Provinsi Sumatera Utara
+    </a>
+</section>
+</main>
+<footer>
+    <p>Website Informasi Kabupaten Samosir</p>
+    <p>Untuk keperluan pembelajaran dan visualisasi data</p>
+</footer>
+</body>
+</html>
